@@ -1,7 +1,10 @@
-package kotlin
+package kotlinPrac
 
-private var num1 = 10L
-val num2: Long = 10L
+import javaPrac.Person
+
 fun main() {
-    println(num1)
+    var num1 = 10L
+    val num2: Long? = null
+    val person: Person? = Person("고윤석")
+    println(person.toString())
 }

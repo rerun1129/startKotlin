@@ -1,2 +1,4 @@
-package javaPrac;public record Person() {
+package javaPrac;
+
+public record Person(String name) {
 }
