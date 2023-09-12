@@ -1,13 +1,13 @@
 package kotlinPrac
 
 import javaPrac.Person
-import java.lang.IllegalArgumentException
 
 fun main() {
-    val person = Person(null)
-    startWith(person.name)
+    val name = "111"
+    println("이름 : ${name}")
 }
 
-fun startWith(str: String): Boolean {
-    return str.startsWith("A")
+fun printAgeIfPerson(obj: Any?) {
+    val person = obj as? Person
+    println(person?.age)
 }

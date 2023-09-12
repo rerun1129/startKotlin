@@ -1,19 +1,22 @@
 package javaPrac;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.Objects;
-
 public class Person {
     private final String name;
+    private final int age;
 
-    public Person ( String name ) { this.name = name; }
+    public Person ( String name, int age ) {
+        this.name = name;
+        this.age = age;
+    }
 
     public String name ( ) { return name; }
 
     public String getName ( ) {
         return name;
+    }
+
+    public int getAge ( ) {
+        return age;
     }
 
     @Override
